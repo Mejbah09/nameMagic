@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'javaScript'</title>
+     <link rel="stylesheet" href="css/style.css     ">
+</head>
+<body>
+    <div>
+   
+        
+        <label for="name" id="label">❤️Enter Your name and see the magic ❤️</label>  
+        <input id="name" type="text" placeholder="Enter Your Name Nickname " >
+        <button onclick="alert_name()" id="submit_btn">Submit</button>
+         <input type="reset" id="reset">
+        <h1 id="result"></h1>
+        <script>
+         function alert_name(){
+         var username = document.getElementById('name').value;
+            document.getElementById('result').innerHTML='❤️❤️❤️I love you   '+  username +'  ❤️❤️❤️'  ;  
+            document.getElementById('submit_btn').innerHTML='❤️Proposal accepted❤️'
+            document.getElementById('submit_btn').style.color='green'
+            document.getElementById('submit_btn').style.background='black'
+            document.getElementById('result').style.color='red'
+            document.getElementById('label').style.color='green'
+         
+         }                                                                                                     
+    
+     </script>
+    
+  </div>
+</body>
+</html>
